@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const RfidCards = require('../models/rfid')
+const Transactions = require('../models/transactions')
 const httpStatus = require('http-status-codes')
 
 //get all
