@@ -7,5 +7,9 @@ GET https://water-dispenser.herokuapp.com/rfids/7B1CB1281
 Authorization: Basic Z3V5OjEyMzQ1 
 
 ###
+GET http://localhost:5000/rfids
+Authorization: Basic Z3V5OjEyMzQ1 
+
+###
 GET http://localhost:5000/rfids/7B1CB128
 Authorization: Basic Z3V5OjEyMzQ1 
