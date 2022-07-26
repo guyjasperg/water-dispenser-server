@@ -7,5 +7,24 @@ GET https://water-dispenser.herokuapp.com/rfids/7B1CB1281
 Authorization: Basic Z3V5OjEyMzQ1 
 
 ###
+GET http://localhost:5000/rfids
+Authorization: Basic Z3V5OjEyMzQ1 
+
+###
 GET http://localhost:5000/rfids/7B1CB128
 Authorization: Basic Z3V5OjEyMzQ1 
+
+###
+GET http://localhost:5000/trans
+Authorization: Basic Z3V5OjEyMzQ1
+
+###
+POST http://localhost:5000/trans
+Authorization: Basic Z3V5OjEyMzQ1 
+Content-Type: application/json
+
+{
+    "cardID" : "5BD0AE28",
+    "amount" : 50,
+    "transType": "Purchase"
+}

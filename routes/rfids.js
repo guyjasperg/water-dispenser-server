@@ -7,6 +7,15 @@ const httpStatus = require('http-status-codes')
 router.get('/', BasicAuth, async (req, res) => {
     try {
         const rfids = await RfidCards.find()
+
+        rfids.forEach(card => {
+            if(card.balance > 0){
+                console.log(card._id.toString());
+                console.log(card.cardID);
+                console.log(card.balance);
+            }
+        });
+
         res.json(rfids)
     }
     catch(error) {
@@ -54,6 +63,7 @@ router.get('/:id', BasicAuth, async (req, res) => {
 
 //Create one
 router.post('/', async (req, res) => {
+    console.log('rfidCards /POST')
     const rfidcard = new RfidCards({
         cardID: req.body.cardID,
         balance: req.body.balance
