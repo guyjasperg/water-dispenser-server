@@ -19,12 +19,23 @@ GET http://localhost:5000/trans
 Authorization: Basic Z3V5OjEyMzQ1
 
 ###
+GET http://localhost:5000/trans/filtered
+Authorization: Basic Z3V5OjEyMzQ1
+Content-Type: application/json
+
+{
+    "limit": 2,
+    "dateFrom": "2022-07-01",
+    "dateTo": "2022-08-01"
+}
+
+###
 POST http://localhost:5000/trans
 Authorization: Basic Z3V5OjEyMzQ1 
 Content-Type: application/json
 
 {
-    "cardID" : "5BD0AE28",
-    "amount" : 50,
+    "cardID" : "123456ABC",
+    "amount" : 250,
     "transType": "Purchase"
 }

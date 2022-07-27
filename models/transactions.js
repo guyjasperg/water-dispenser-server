@@ -14,6 +14,10 @@ const transactionSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
+    amountDispensed: {
+        type: Number,
+        default: 0
+    },
     rfidcard: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
