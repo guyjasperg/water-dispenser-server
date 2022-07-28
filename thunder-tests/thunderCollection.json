@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "e329ef97-81d6-456e-b638-514728fb40b7",
+    "colName": "WaterDispenser",
+    "created": "2022-07-28T10:04:15.120Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "91225caf-3416-49c3-a9ce-b32c0049953c",
+        "name": "RFID_Cards",
+        "containerId": "",
+        "created": "2022-07-28T10:04:41.745Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "40df6a9a-289f-4249-8cef-f17306f88d86",
+        "name": "Transactions",
+        "containerId": "",
+        "created": "2022-07-28T10:08:19.996Z",
+        "sortNum": 20000
+      }
+    ]
+  }
+]
